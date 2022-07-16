@@ -18,10 +18,14 @@ Utilize `prompt` para perguntar os números e a operação, e utilize uma estrut
 
   Então, utilizaremos uma estrutura condicional para realizar o cálculo. Podemos utilizar
 tanto uma cadeia de ifs como um switch case.
+
+  IMPORTANTE: quando receber um valor pelo prompt, ele sempre virá como string. No exemplo,
+estou utilizando o parseInt para fazer a conversão para número inteiro (pode usar o parseFloat
+para números com casas decimais).
 */
 
-const num1 = prompt("Digite o primeiro número:");
-const num2 = prompt("Digite o segundo número:");
+const num1 = parseInt(prompt("Digite o primeiro número:"));
+const num2 = parseInt(prompt("Digite o segundo número:"));
 const operacao = prompt("Digite a operação [+ - * /]:");
 
 // RESOLUÇÃO 1
